@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18144129, g: 0.22707112, b: 0.3073909, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -206,13 +206,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392969066}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.14010899, y: -0.0134024285, z: -0.0018966851, w: -0.99004364}
+  m_LocalPosition: {x: -0.14, y: 2.17, z: 4.813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.104, y: -358.385, z: 0.448}
 --- !u!114 &392969070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,8 +365,8 @@ MonoBehaviour:
   anim: {fileID: 730840816}
   cameraTransform: {fileID: 392969069}
   motionVector:
-    smoothTime: 0.2
-    clampMagnitude: 1.5
+    smoothTime: 0.3
+    clampMagnitude: 0.6
 --- !u!114 &730840818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +394,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 730840817}
+        m_TargetAssemblyTypeName: Carl_Movement, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 37e6f676-3001-46b4-9ee1-d8bf2e6cdf63
     m_ActionName: '3D Movement/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
@@ -402,12 +414,24 @@ MonoBehaviour:
     m_ActionId: 948890b8-127b-4d0f-8373-b8f48ba1e610
     m_ActionName: '3D Movement/Jump[/Keyboard/space]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 730840817}
+        m_TargetAssemblyTypeName: Carl_Movement, Assembly-CSharp
+        m_MethodName: ToggleSprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 65e2f3c8-a5aa-45b8-8c2d-87ff59db7198
     m_ActionName: '3D Movement/Sprint[/Keyboard/shift]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 3D Movement
+  m_DefaultActionMap: Main
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 392969068}
 --- !u!1 &1137032855
@@ -498,13 +522,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137032855}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.80272734, y: -0.45313832, z: 0.1630657, w: 0.351716}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 45.434, y: -175.344, z: -119.161}
 --- !u!114 &1137032858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,8 +673,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 392969069}
   - {fileID: 1137032857}
   - {fileID: 1967998563}
   - {fileID: 2087760925}
+  - {fileID: 392969069}
   - {fileID: 730840814}

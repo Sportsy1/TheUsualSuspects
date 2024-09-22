@@ -1,8 +1,8 @@
 {
-    "name": "HunkMovement",
+    "name": "CarlMovement",
     "maps": [
         {
-            "name": "3D Movement",
+            "name": "Main",
             "id": "a8a920a8-d1ca-49ce-8d99-1ec120ca9726",
             "actions": [
                 {

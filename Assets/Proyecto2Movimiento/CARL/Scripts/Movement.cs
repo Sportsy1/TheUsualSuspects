@@ -7,9 +7,7 @@ using CallbackContext = UnityEngine.InputSystem.InputAction.CallbackContext;
 public class Carl_Movement : MonoBehaviour
 {
     [SerializeField] private Animator anim;
-
     [SerializeField] private Transform cameraTransform;
-
     [SerializeField] private VectorDamper_Carl motionVector = new VectorDamper_Carl(true);
 
     private int velXID, velYID;
@@ -23,9 +21,7 @@ public class Carl_Movement : MonoBehaviour
     public void Move(CallbackContext ctx)
     {
         Vector2 direction = ctx.ReadValue<Vector2>();
-
         motionVector.TargetValue = direction;
-
     }
 
     public void ToggleSprint(CallbackContext ctx)
@@ -37,7 +33,6 @@ public class Carl_Movement : MonoBehaviour
     private void Update()
     {
         motionVector.Update();
-
         anim.SetFloat(velXID, motionVector.CurrentValue.x);
         anim.SetFloat(velYID, motionVector.CurrentValue.y);
     }
