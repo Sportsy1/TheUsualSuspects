@@ -35,7 +35,7 @@ BlendTree:
   m_Name: Movement
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 1c88063ff53c7574fb06349a60c56021,
+    m_Motion: {fileID: -203655887218126122, guid: 6ea49d7c19225de4d94c29664b99cd9a,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -44,7 +44,7 @@ BlendTree:
     m_DirectBlendParameter: VelX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 048bd8dda1915514090d2a0ae1b62182,
+    m_Motion: {fileID: -203655887218126122, guid: 57dab7ac8759f104cb5b86ff7d094e4a,
       type: 3}
     m_Threshold: 0.125
     m_Position: {x: 0, y: 0.3}
@@ -53,7 +53,7 @@ BlendTree:
     m_DirectBlendParameter: VelX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: b438daa193782724faf9085387646c22,
+    m_Motion: {fileID: -203655887218126122, guid: 813c4c24ba970c44a8d6ca8fb6841703,
       type: 3}
     m_Threshold: 0.25
     m_Position: {x: 0, y: -0.3}
@@ -62,7 +62,7 @@ BlendTree:
     m_DirectBlendParameter: VelX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: b9a431ae5729f0f43bdb9350f8d6a4fd,
+    m_Motion: {fileID: -203655887218126122, guid: d84f8717285c1bb4285e63f50ff54176,
       type: 3}
     m_Threshold: 0.375
     m_Position: {x: 0, y: 0.6}
@@ -71,7 +71,7 @@ BlendTree:
     m_DirectBlendParameter: VelX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 20fb16066bf280444a53d0e0fa18bf11,
+    m_Motion: {fileID: -203655887218126122, guid: e26c31dcfc69f3846b010064372286f2,
       type: 3}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 1}
@@ -80,41 +80,41 @@ BlendTree:
     m_DirectBlendParameter: VelX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 4be2e5102934f694990e668b1e67e6e8,
+    m_Motion: {fileID: -203655887218126122, guid: aff8a5465270b81439fe640aa3af275c,
       type: 3}
     m_Threshold: 0.625
-    m_Position: {x: -0.6, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: VelX
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 4be2e5102934f694990e668b1e67e6e8,
-      type: 3}
-    m_Threshold: 0.75
-    m_Position: {x: 0.6, y: 0.01}
-    m_TimeScale: 1
-    m_CycleOffset: 0.5
-    m_DirectBlendParameter: VelX
-    m_Mirror: 1
-  - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: a536bbf4b541ece488f58bb993c43bd8,
-      type: 3}
-    m_Threshold: 0.875
     m_Position: {x: -0.3, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: VelX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: a536bbf4b541ece488f58bb993c43bd8,
+    m_Motion: {fileID: -203655887218126122, guid: 48ebe949c9a9ee14fad2bf908ae929c0,
       type: 3}
-    m_Threshold: 1
+    m_Threshold: 0.75
     m_Position: {x: 0.3, y: 0}
     m_TimeScale: 1
-    m_CycleOffset: 0.5
+    m_CycleOffset: 0
     m_DirectBlendParameter: VelX
-    m_Mirror: 1
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: b435f175ceec3114e9204c20bba4ac3f,
+      type: 3}
+    m_Threshold: 0.875
+    m_Position: {x: -0.6, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: VelX
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: 07bd95eab890ca249a6e92866f7fb1f3,
+      type: 3}
+    m_Threshold: 1
+    m_Position: {x: 0.6, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: VelX
+    m_Mirror: 0
   m_BlendParameter: VelX
   m_BlendParameterY: VelY
   m_MinThreshold: 0
@@ -133,7 +133,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -7106506894916567738}
-    m_Position: {x: 409.27267, y: 95.86363, z: 0}
+    m_Position: {x: 370, y: 110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -150,7 +150,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HUNK 1
+  m_Name: CarlController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: VelX
