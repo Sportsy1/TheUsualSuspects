@@ -554,7 +554,19 @@ MonoBehaviour:
     m_ActionId: 37e6f676-3001-46b4-9ee1-d8bf2e6cdf63
     m_ActionName: '3D Movement/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2010443727}
+        m_TargetAssemblyTypeName: Hunk_Movement, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 948890b8-127b-4d0f-8373-b8f48ba1e610
     m_ActionName: '3D Movement/Jump[/Keyboard/space]'
   - m_PersistentCalls:
@@ -593,8 +605,8 @@ MonoBehaviour:
   anim: {fileID: 2010443728}
   cameraTransform: {fileID: 392969069}
   motionVector:
-    smoothTime: 0.2
-    clampMagnitude: 1.5
+    smoothTime: 0.1
+    clampMagnitude: 0.5
 --- !u!95 &2010443728 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 1eb2695903933c847a2a605ea49a7b6c,

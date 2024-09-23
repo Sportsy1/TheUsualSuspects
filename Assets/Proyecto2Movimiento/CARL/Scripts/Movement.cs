@@ -26,7 +26,10 @@ public class Carl_Movement : MonoBehaviour
 
     public void Jump(CallbackContext ctx)
     {
-
+        if (ctx.performed)
+        {
+            anim.SetTrigger("Jump");
+        }
     }
 
     public void ToggleSprint(CallbackContext ctx)

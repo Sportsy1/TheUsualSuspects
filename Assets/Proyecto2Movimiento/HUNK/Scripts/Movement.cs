@@ -31,6 +31,14 @@ public class Hunk_Movement : MonoBehaviour
 
     }
 
+    public void Jump(CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            anim.SetTrigger("Jump");
+        }
+    }
+
     public void ToggleSprint(CallbackContext ctx)
     {
         bool val = ctx.ReadValueAsButton();
