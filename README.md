@@ -1,7 +1,5 @@
 # The Usual Suspects
 
-# The Usual Suspects
-
 # Entrega 2 | Movimiento
 
 
