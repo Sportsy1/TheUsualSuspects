@@ -410,7 +410,19 @@ MonoBehaviour:
     m_ActionId: 37e6f676-3001-46b4-9ee1-d8bf2e6cdf63
     m_ActionName: '3D Movement/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 730840815}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 948890b8-127b-4d0f-8373-b8f48ba1e610
     m_ActionName: '3D Movement/Jump[/Keyboard/space]'
   - m_PersistentCalls:
@@ -663,6 +675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Quad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775870203753615344, guid: a0d2005dd4fedfc4bbbee46ec5a07d7f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

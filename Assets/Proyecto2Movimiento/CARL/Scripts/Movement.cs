@@ -24,6 +24,11 @@ public class Carl_Movement : MonoBehaviour
         motionVector.TargetValue = direction;
     }
 
+    public void Jump(CallbackContext ctx)
+    {
+
+    }
+
     public void ToggleSprint(CallbackContext ctx)
     {
         bool val = ctx.ReadValueAsButton();
