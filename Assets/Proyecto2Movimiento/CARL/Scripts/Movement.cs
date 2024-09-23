@@ -10,26 +10,26 @@ public class Carl_Movement : MonoBehaviour
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private VectorDamper_Carl motionVector = new VectorDamper_Carl(true);
 
-    private int velXID, velYID;
+    private int velXid, velYid;
 
     public void Awake()
     {
-        velXID = Animator.StringToHash("VelX");
-        velYID = Animator.StringToHash("VelY");
+        velXid = Animator.StringToHash("VelX");
+        velYid = Animator.StringToHash("VelY");
     }
 
     public void Move(CallbackContext ctx)
     {
         Vector2 direction = ctx.ReadValue<Vector2>();
+        if (direction != Vector2.zero) anim.SetBool("isIdle", false);
+        else anim.SetBool("isIdle", true);
         motionVector.TargetValue = direction;
     }
 
     public void Jump(CallbackContext ctx)
     {
-        if (ctx.performed)
-        {
-            anim.SetTrigger("Jump");
-        }
+        bool val = ctx.performed;
+        if (val) anim.SetTrigger("Jump");
     }
 
     public void ToggleSprint(CallbackContext ctx)
@@ -41,8 +41,9 @@ public class Carl_Movement : MonoBehaviour
     private void Update()
     {
         motionVector.Update();
-        anim.SetFloat(velXID, motionVector.CurrentValue.x);
-        anim.SetFloat(velYID, motionVector.CurrentValue.y);
+        Vector2 direction = motionVector.CurrentValue;
+        anim.SetFloat(velXid, direction.x);
+        anim.SetFloat(velYid, direction.y);
     }
 
     private void OnAnimatorMove()
