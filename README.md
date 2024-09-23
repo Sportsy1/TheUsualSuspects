@@ -1,5 +1,22 @@
 # The Usual Suspects
 
+# The Usual Suspects
+
+# Entrega 2 | Movimiento
+
+
+## Juan Jose Areiza
+
+https://github.com/user-attachments/assets/114bcc5e-2fb7-4b16-a1eb-d6c1c54c03a1
+
+## David Posada
+
+
+
+## Santiago Bañol
+
+
+
 # Entrega 1 | Proyecto Rig
 
 
