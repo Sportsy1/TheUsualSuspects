@@ -30,9 +30,9 @@ public class MovementController : MonoBehaviour
     }
 
     public void Jump(CallbackContent ctx){
+        if(anim.GetBool("isJumping")) return;
         bool val = ctx.performed;
         if (val) anim.SetTrigger("Jump");
-
     }
 
     private void Awake()
