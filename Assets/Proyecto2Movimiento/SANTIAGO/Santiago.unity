@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.1838775, g: 0.2289982, b: 0.3029631, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,6 +200,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5d49c84a-0e22-4aa2-879e-9299bc7c6dfa
     m_ActionName: 'BasicControls/Sprint[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 18195899}
+        m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0b51d601-3e3c-4c23-85ad-a04c7d8e4f00
+    m_ActionName: 'BasicControls/Attack[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 18195899}
+        m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
+        m_MethodName: ChangeWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 73042eb4-85b9-4fe3-9bd3-6f5c5ead9201
+    m_ActionName: 'BasicControls/ChangeWeapon[/Keyboard/tab]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: BasicControls
@@ -227,6 +259,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1933903143}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &18195899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18195891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd84e8ea7d6196a478acf68fe39db155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeaponMaxIndex: 2
 --- !u!1 &281133125
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,14 +301,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -300,8 +345,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 6450
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -315,13 +360,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281133125}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0.973, y: 3, z: -4.836}
+  m_LocalRotation: {x: 0.21503659, y: 0.5298574, z: -0.14098413, w: 0.80816704}
+  m_LocalPosition: {x: 14.61, y: 3.79, z: -4.836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.8, y: 66.5, z: 0}
 --- !u!114 &281133128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +713,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 18195895}
+    - targetCorrespondingSourceObject: {fileID: 8174323702052584568, guid: cfe6ce5fee383a947a7313e82af96d5c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 18195899}
   m_SourcePrefab: {fileID: 100100000, guid: cfe6ce5fee383a947a7313e82af96d5c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using CallbackContent = UnityEngine.InputSystem.InputAction.CallbackContext; 
 
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PlayerInput))]
 public class MovementController : MonoBehaviour
 {
     private Animator anim;
@@ -40,6 +42,7 @@ public class MovementController : MonoBehaviour
         anim = GetComponent<Animator>();
         VelXid = Animator.StringToHash("VX");
         VelYid = Animator.StringToHash("VY"); 
+        anim.SetBool("isIdling", true);
     }
 
     private void Update()
@@ -59,5 +62,13 @@ public class MovementController : MonoBehaviour
         anim.rootRotation = Quaternion.Slerp(anim.rootRotation, rotation, motionVector.CurrentValue.magnitude);
         anim.ApplyBuiltinRootMotion();
 
+    }
+
+    public void BoredCounter(){
+        if(anim.GetInteger("IdlingCounter") > 2){
+             anim.SetInteger("IdlingCounter", 0);
+             return;    
+        }
+        anim.SetInteger("IdlingCounter", anim.GetInteger("IdlingCounter")+1);
     }
 }

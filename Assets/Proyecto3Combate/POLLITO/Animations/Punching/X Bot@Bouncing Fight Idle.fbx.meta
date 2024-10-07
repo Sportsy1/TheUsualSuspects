@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2fc7ff11a6a9184ab35d294f789e534
+guid: 085aafa6a9703f14e86fbf78b550fd80
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Neutral Idle
+      name: Bouncing Fight Idle
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 223
+      lastFrame: 89
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -44,10 +44,10 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
@@ -55,13 +55,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.9936842
-        functionName: BoredCounter
+      - time: 0.03505235
+        functionName: OnWeaponChanged
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 91b384e6cf5f1bc4cb426339af730bdb,
+        objectReferenceParameter: {fileID: 11500000, guid: fd84e8ea7d6196a478acf68fe39db155,
           type: 3}
         floatParameter: 0
-        intParameter: 0
+        intParameter: 1
         messageOptions: 0
       transformMask: []
       maskType: 3

@@ -9,6 +9,7 @@ public class Jump_antiBuffering : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("isJumping", true);
+        animator.SetBool("canChange", false);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -21,6 +22,7 @@ public class Jump_antiBuffering : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("isJumping", false);
+        animator.SetBool("canChange", true);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

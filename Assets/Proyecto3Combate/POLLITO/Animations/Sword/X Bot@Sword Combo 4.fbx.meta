@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2fc7ff11a6a9184ab35d294f789e534
+guid: 9f7cded9dfebd4e47a5015115133b4b2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,23 +31,23 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Neutral Idle
+      name: Sword Combo 4
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 223
+      lastFrame: 73
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
@@ -55,10 +55,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.9936842
-        functionName: BoredCounter
+      - time: 0.49891987
+        functionName: OnAttackEnding
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 91b384e6cf5f1bc4cb426339af730bdb,
+        objectReferenceParameter: {fileID: 11500000, guid: fd84e8ea7d6196a478acf68fe39db155,
           type: 3}
         floatParameter: 0
         intParameter: 0
