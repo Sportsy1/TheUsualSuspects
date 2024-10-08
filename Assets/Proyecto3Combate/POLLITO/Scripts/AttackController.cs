@@ -6,14 +6,18 @@ using CallbackContext = UnityEngine.InputSystem.InputAction.CallbackContext;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(PlayerInput))]
+[RequireComponent(typeof(CharacterVFXUpdater))]
 public class AttackController : MonoBehaviour
 {
     [Tooltip("Starts in 1, so if you have 3 weapons available, the int will be 3, and so on")] 
     [SerializeField] int WeaponMaxIndex;
+    [SerializeField] GameObject swordMesh;
     private Animator anim;
+    private CharacterVFXUpdater _VFXUpdater;
 
     void Awake()
     {
+        _VFXUpdater = GetComponent<CharacterVFXUpdater>();
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", true);
         anim.SetInteger("Weapon", 1);
@@ -26,6 +30,7 @@ public class AttackController : MonoBehaviour
             anim.SetInteger("Weapon", anim.GetInteger("Weapon")+1);
             if(anim.GetInteger("Weapon")> WeaponMaxIndex) anim.SetInteger("Weapon", 1);
             anim.SetTrigger("ChangeWeapon");
+            InstantiateWeapon(anim.GetInteger("Weapon"));
         }
     }
 
@@ -47,5 +52,18 @@ public class AttackController : MonoBehaviour
         if(value == 0) Result = false;
         else Result = true;
         anim.SetBool("canChange", Result);
+    }
+
+    public void InstantiateWeapon(int Weapon){
+        switch(Weapon){
+            default: break;
+            case 1:
+                swordMesh.SetActive(false);
+                break;
+            case 2:
+                swordMesh.SetActive(true);
+                _VFXUpdater.ToggleSword(1,0, swordMesh);
+                break;
+        }
     }
 }
