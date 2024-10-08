@@ -1,7 +1,13 @@
 # The Usual Suspects
 
-# Entrega 2 | Movimiento
+# Entrega 3 | Combate y combos
 
+## Santiago Bañol
+https://github.com/user-attachments/assets/9ce25394-4788-42f3-9d9c-0cf9c608dcb2
+
+
+
+# Entrega 2 | Movimiento
 
 ## Juan Jose Areiza
 
