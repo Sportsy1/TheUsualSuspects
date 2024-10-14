@@ -5,6 +5,14 @@
 ## Santiago Bañol
 https://github.com/user-attachments/assets/9ce25394-4788-42f3-9d9c-0cf9c608dcb2
 
+## Juan José Areiza
+https://github.com/user-attachments/assets/8e1e8f8a-e015-449c-a21c-be728580ea2c
+
+![Combat Diagram Carl](https://github.com/user-attachments/assets/0b283727-71a8-43a3-a622-b520f416b0c8)
+
+![Animator General](https://github.com/user-attachments/assets/61579a54-22df-4f67-a684-0a1c15d3329c)
+![Animator Paradigma 1](https://github.com/user-attachments/assets/559289de-095d-427f-a44a-409565e3962a)
+![Animator Paradigma 2](https://github.com/user-attachments/assets/578b4abc-249c-4342-a902-d142c1792e18)
 
 
 # Entrega 2 | Movimiento
