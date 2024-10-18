@@ -25,6 +25,7 @@ public class AttackController : MonoBehaviour
     }
 
     public void ChangeWeapon(CallbackContext ctx){
+        if(!anim.GetBool("canChange")) return;
         bool val = ctx.performed;
         if (val){
             anim.SetInteger("Weapon", anim.GetInteger("Weapon")+1);
