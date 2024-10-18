@@ -34,12 +34,25 @@ public class AttackController : MonoBehaviour
         }
     }
 
-    public void Attack(CallbackContext ctx){
+    public void HeavyAttack(CallbackContext ctx){
         if(!anim.GetBool("canAttack")) return;
         bool val = ctx.performed;
         if(val){
+            anim.SetBool("HeavyAttack", true);
             anim.SetTrigger("Attack");
             anim.SetBool("canAttack", false);
+            
+        } 
+    }
+
+    public void LightAttack(CallbackContext ctx){
+        if(!anim.GetBool("canAttack")) return;
+        bool val = ctx.performed;
+        if(val){
+            anim.SetBool("HeavyAttack", false);
+            anim.SetTrigger("Attack");
+            anim.SetBool("canAttack", false);
+            
         } 
     }
 

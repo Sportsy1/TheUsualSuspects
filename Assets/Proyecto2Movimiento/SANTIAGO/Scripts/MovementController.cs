@@ -21,7 +21,9 @@ public class MovementController : MonoBehaviour
     {
         Vector2 direction = ctx.ReadValue<Vector2>();
         if(direction != Vector2.zero) anim.SetBool("isIdling", false);
-        else anim.SetBool("isIdling", true);
+        else {
+            anim.SetBool("isIdling", true);
+        } 
         motionVector.TargetValue = direction; 
     }
 

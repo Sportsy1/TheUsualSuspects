@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 18195899}
         m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
-        m_MethodName: Attack
+        m_MethodName: LightAttack
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -232,6 +232,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 73042eb4-85b9-4fe3-9bd3-6f5c5ead9201
     m_ActionName: 'BasicControls/ChangeWeapon[/Keyboard/tab]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 18195899}
+        m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
+        m_MethodName: HeavyAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6b5b7956-8aa7-42eb-b089-130d22c4ff18
+    m_ActionName: 'BasicControls/Heavy Attack[/Mouse/rightButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: BasicControls

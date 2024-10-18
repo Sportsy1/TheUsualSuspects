@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Jump_antiBuffering : StateMachineBehaviour
+public class OnEntryBoolChecker : StateMachineBehaviour
 {
+    [SerializeField] string[] parameterNames;
+    [SerializeField] bool[] parameterValues;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

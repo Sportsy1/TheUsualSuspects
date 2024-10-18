@@ -51,7 +51,7 @@ Material:
     - _Blend: 0
     - _CastShadows: 1
     - _Cull: 2
-    - _Dissolving: 1
+    - _Dissolving: 0.65
     - _DstBlend: 0
     - _NoisePower: 0.61
     - _NoiseScale: 6.37
