@@ -15,6 +15,11 @@ https://github.com/user-attachments/assets/e0479e6a-19aa-4955-800b-9945e234ce49
 ![Animator Paradigma 1](https://github.com/user-attachments/assets/559289de-095d-427f-a44a-409565e3962a)
 ![Animator Paradigma 2](https://github.com/user-attachments/assets/578b4abc-249c-4342-a902-d142c1792e18)
 
+## David Posada
+
+![Ataque 1- Espadon](https://github.com/user-attachments/assets/9620c6ef-12d2-451f-b6bc-30ba0910ff52)
+![Ataque 2- Puños](https://github.com/user-attachments/assets/40bef2f9-9d95-4b21-aea8-6b21f46b850b)
+![Daño](https://github.com/user-attachments/assets/025c154e-2770-4820-bf3d-c5e73bba71db)
 
 # Entrega 2 | Movimiento
 
