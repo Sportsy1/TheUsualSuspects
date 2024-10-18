@@ -18,9 +18,13 @@ https://github.com/user-attachments/assets/e0479e6a-19aa-4955-800b-9945e234ce49
 ## David Posada
 
 https://github.com/user-attachments/assets/9620c6ef-12d2-451f-b6bc-30ba0910ff52
+
 ![image](https://github.com/user-attachments/assets/0484b39d-9902-479b-be94-c9c9269350e1)
+
 https://github.com/user-attachments/assets/40bef2f9-9d95-4b21-aea8-6b21f46b850b
+
 ![image](https://github.com/user-attachments/assets/cd648565-5f21-4869-a7ac-96682b5fb1ce)
+
 https://github.com/user-attachments/assets/025c154e-2770-4820-bf3d-c5e73bba71db
 
 # Entrega 2 | Movimiento
