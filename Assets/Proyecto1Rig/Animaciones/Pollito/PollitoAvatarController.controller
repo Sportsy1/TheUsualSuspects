@@ -1477,8 +1477,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef41e1e2528b6a5428839581a264aa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameterNames: []
-  parameterValues: 
+  parameterNames:
+  - isJumping
+  - canChange
+  parameterValues: 0100
 --- !u!1102 &-720768743958769757
 AnimatorState:
   serializedVersion: 6
@@ -3481,8 +3483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef41e1e2528b6a5428839581a264aa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameterNames: []
-  parameterValues: 
+  parameterNames:
+  - isJumping
+  - canChange
+  parameterValues: 0100
 --- !u!1101 &8713188000682904699
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
