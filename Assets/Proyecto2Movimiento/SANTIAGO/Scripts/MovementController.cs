@@ -39,6 +39,12 @@ public class MovementController : MonoBehaviour
         if (val) anim.SetTrigger("Jump");
     }
 
+    public void onDodge(CallbackContent ctx) {
+        if(ctx.performed){
+            anim.SetTrigger("Dodge");
+        }
+    }
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -66,11 +72,4 @@ public class MovementController : MonoBehaviour
 
     }
 
-    public void BoredCounter(){
-        if(anim.GetInteger("IdlingCounter") > 2){
-             anim.SetInteger("IdlingCounter", 0);
-             return;    
-        }
-        anim.SetInteger("IdlingCounter", anim.GetInteger("IdlingCounter")+1);
-    }
 }

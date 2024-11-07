@@ -55,14 +55,6 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.9936842
-        functionName: BoredCounter
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 91b384e6cf5f1bc4cb426339af730bdb,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       - time: 0
         functionName: TurnOffFX
         data: 

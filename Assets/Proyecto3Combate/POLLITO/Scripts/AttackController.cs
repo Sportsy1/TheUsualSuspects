@@ -12,8 +12,9 @@ public class AttackController : MonoBehaviour
     [Tooltip("Starts in 1, so if you have 3 weapons available, the int will be 3, and so on")] 
     [SerializeField] int WeaponMaxIndex;
     [SerializeField] GameObject swordMesh;
-    private Animator anim;
-    private CharacterVFXUpdater _VFXUpdater;
+    
+    Animator anim;
+    CharacterVFXUpdater _VFXUpdater;
 
     void Awake()
     {
