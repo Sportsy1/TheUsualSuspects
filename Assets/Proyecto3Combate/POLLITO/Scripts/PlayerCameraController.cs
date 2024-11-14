@@ -50,6 +50,7 @@ public class PlayerCameraController : MonoBehaviour
     }
 
     void UnlockCamera(){
+        isLocked = false;
         anim.SetBool("Locked", false);
         FreeVCam.gameObject.SetActive(true);
         LockedVCam.gameObject.SetActive(false);
