@@ -14,6 +14,7 @@ public class PlayerState : MonoBehaviour
 
     [SerializeField]
     private float maxHealth = 100f;
+    [SerializeField]
     private float currentHealth;
 
     private void Update()
@@ -40,7 +41,7 @@ public class PlayerState : MonoBehaviour
 
     public bool UpdateHealth(float healthDelta)
     {
-        if (currentHealth >= healthDelta)
+        if (currentHealth >= (healthDelta*-1))
         {
             currentHealth += healthDelta;
             return true;

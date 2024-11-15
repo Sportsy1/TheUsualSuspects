@@ -39,6 +39,14 @@ public class Hunk_Movement : MonoBehaviour
         }
     }
 
+    public void Dodge(CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            anim.SetTrigger("Dodge");
+        }
+    }
+
     public void ToggleSprint(CallbackContext ctx)
     {
         bool val = ctx.ReadValueAsButton();

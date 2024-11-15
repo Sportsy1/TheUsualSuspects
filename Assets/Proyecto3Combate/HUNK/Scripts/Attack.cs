@@ -10,6 +10,12 @@ public class Attack : MonoBehaviour
     private Animator anim;
     [SerializeField]
     private GameObject sword;
+    [SerializeField]
+    private Hunk_WeaponDamager swordWeapon;
+    [SerializeField]
+    private Hunk_WeaponDamager fistsWeapon;
+
+    private Hunk_WeaponDamager currentDamager;
 
     private bool AttackActive()
     {
@@ -24,12 +30,14 @@ public class Attack : MonoBehaviour
             if (AttackActive()) return;
             anim.SetInteger("Weapon", 1);
             sword.SetActive(true);
+            currentDamager = swordWeapon;
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (AttackActive()) return;
             anim.SetInteger("Weapon", 2);
             sword.SetActive(false);
+            currentDamager = fistsWeapon;
         }
     }
 
@@ -51,6 +59,11 @@ public class Attack : MonoBehaviour
         if (state.Stamina < -40) return;
         anim.SetTrigger("Attack");
         anim.SetBool("Heavy", true);
+    }
+
+    public void ToggleDamageDetector(float motionValue)
+    {
+        currentDamager.Toggle(motionValue);
     }
 
     private void Awake()

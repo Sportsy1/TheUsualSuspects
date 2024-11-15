@@ -2051,13 +2051,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: DmgX
+  - m_Name: DamageX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: DmgY
+  - m_Name: DamageY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -2319,12 +2319,12 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: 8458731884979092674}
-    second:
-    - {fileID: -8157329280010001251}
   - first: {fileID: -1274258549527492020}
     second:
     - {fileID: -8546097354141596150}
+  - first: {fileID: 8458731884979092674}
+    second:
+    - {fileID: -8157329280010001251}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -20, y: -30, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
@@ -2946,8 +2946,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: VX
     m_Mirror: 0
-  m_BlendParameter: DmgX
-  m_BlendParameterY: DmgY
+  m_BlendParameter: DamageX
+  m_BlendParameterY: DamageY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -3404,11 +3404,11 @@ AnimatorStateMachine:
   - {fileID: -9198660859074721553}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: 4561982355722646437}
-    second: []
   - first: {fileID: 1379538317910474222}
     second:
     - {fileID: -2075400338200159161}
+  - first: {fileID: 4561982355722646437}
+    second: []
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 90, y: 30, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}

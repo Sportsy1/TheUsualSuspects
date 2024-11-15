@@ -10,6 +10,8 @@ using Random = UnityEngine.Random;
 [RequireComponent(typeof(Animator))]
 public class MutantAI : MonoBehaviour
 {
+    private AttackManager attackManager;
+
     public enum State
     {
         Patrol,
@@ -47,6 +49,7 @@ public class MutantAI : MonoBehaviour
     {
         context.agent = GetComponent<NavMeshAgent>();
         context.animator = GetComponent<Animator>();
+        attackManager = GetComponent<AttackManager>();
     }
 
     private void Patrol()
@@ -85,7 +88,7 @@ public class MutantAI : MonoBehaviour
             context.attackTimer += Time.deltaTime;
             if (context.attackTimer >= context.currentAttackDelay)
             {
-                context.animator.SetTrigger("Attack");
+                attackManager.Attack();
                 context.attackTimer = 0;
                 context.currentAttackDelay = Random.Range(context.attackDelayMin, context.attackDelayMax);
             }

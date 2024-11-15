@@ -6,6 +6,8 @@ using UnityEngine;
 public class DamageController_hunk : MonoBehaviour, IDamageReceiver_hunk
 {
     private Animator anim;
+    [SerializeField]
+    private int faction;
 
     private void Awake()
     {
@@ -14,8 +16,8 @@ public class DamageController_hunk : MonoBehaviour, IDamageReceiver_hunk
 
     public void ReceiveDamage(IDamageSender_hunk perpetrator, DamagePayload_hunk payload)
     {
-        Debug.Log("RECIVIDO");
-        bool isAlive = GetComponent<PlayerState>().UpdateHealth(payload.damage);
+        bool isAlive = GetComponent<PlayerState>().UpdateHealth(-payload.damage);
+        Debug.Log("is alive = " + isAlive);
         Vector3 damageDirection = transform.InverseTransformDirection(payload.position).normalized;
 
         if (isAlive)
@@ -42,5 +44,5 @@ public class DamageController_hunk : MonoBehaviour, IDamageReceiver_hunk
 
     }
 
-    public int Faction => 0;
+    public int Faction => faction;
 }

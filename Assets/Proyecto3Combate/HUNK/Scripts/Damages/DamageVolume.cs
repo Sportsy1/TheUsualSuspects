@@ -11,10 +11,8 @@ public class DamageVolume_hunk : MonoBehaviour, IDamageSender_hunk
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("adios");
         if (other.TryGetComponent(out IDamageReceiver_hunk receiver))
         {
-            Debug.Log("ola");
             SendDamage(receiver);
         }
     }
