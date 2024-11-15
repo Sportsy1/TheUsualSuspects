@@ -27,6 +27,7 @@ public class PlayerState : MonoBehaviour
     {
         stamina = maxStamina;
         currentHealth = maxHealth;
+        UIManager.Instance.UpdateHealth(currentHealth);
     }
 
     public bool UpdateStamina(float staminaDelta)
@@ -44,10 +45,11 @@ public class PlayerState : MonoBehaviour
     {
         if (currentHealth > healthDelta)
         {
+            UIManager.Instance.UpdateHealth(currentHealth);
             currentHealth += healthDelta;
             return true;
         }
-
+        UIManager.Instance.UpdateHealth(currentHealth);
         return false;
     }
 

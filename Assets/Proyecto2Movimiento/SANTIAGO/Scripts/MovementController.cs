@@ -17,6 +17,10 @@ public class MovementController : MonoBehaviour
     private int VelXid; 
     private int VelYid;
 
+    public void Pause(CallbackContent ctx){
+        UIManager.Instance.Pause();
+    }
+
     public void Move(CallbackContent ctx)
     {
         Vector2 direction = ctx.ReadValue<Vector2>();

@@ -78,13 +78,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ChangeCharacter",
-                    "type": "Value",
-                    "id": "2d7a27d5-40a9-4e1f-b9d8-0c3041e08801",
-                    "expectedControlType": "Axis",
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "72a5c04b-2581-4cd1-a723-092f80e3d3f6",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -221,37 +221,15 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "1D Axis",
-                    "id": "ae84d728-d562-4178-8251-f03c4fa1494b",
-                    "path": "1DAxis",
+                    "name": "",
+                    "id": "f073663b-93cc-45c3-a67c-b76e9e87ad03",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ChangeCharacter",
-                    "isComposite": true,
+                    "action": "Pause",
+                    "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "9e550453-9752-4c53-8c21-28fe155dbc2d",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ChangeCharacter",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "70b81c0a-cfd4-4340-b904-a7d65f516e5e",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ChangeCharacter",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         }
