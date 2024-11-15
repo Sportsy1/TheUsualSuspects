@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,11 +20,11 @@ public class Hunk_WeaponDamager : MonoBehaviour, IDamageSender_hunk
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.TryGetComponent(out IDamageReceiver_hunk target) && target.Faction != Faction) //!hitReceivers.Contains(target))
         {
             hitReceivers.Add(target);
-            Debug.Log("ola");
+            //Debug.Log("ola");
             SendDamage(target);
         }
     }
@@ -34,5 +35,11 @@ public class Hunk_WeaponDamager : MonoBehaviour, IDamageSender_hunk
         Collider col = GetComponent<Collider>();
         col.enabled = !col.enabled;
         this.multiplier = multiplier;
+    }
+
+    public void AntiBug_Collider(){
+        Collider col = GetComponent<Collider>();
+        col.enabled = false;
+        //Debug.Log("Collider apagado por salud");
     }
 }

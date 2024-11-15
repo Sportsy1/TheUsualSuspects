@@ -17,7 +17,7 @@ public class PlayerCameraController : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
-        LockedVCam.gameObject.SetActive(false);
+        //LockedVCam.gameObject.SetActive(false);
     }
     public void LockCamera(CallbackContext ctx){
         if(ctx.performed){

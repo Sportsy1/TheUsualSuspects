@@ -19,6 +19,7 @@ public class Hunk_Movement : MonoBehaviour
 
     public void Awake()
     {
+        if(cameraTransform == null) cameraTransform = Camera.main.transform;
         velXID = Animator.StringToHash("VelX");
         velYID = Animator.StringToHash("VelY");
     }

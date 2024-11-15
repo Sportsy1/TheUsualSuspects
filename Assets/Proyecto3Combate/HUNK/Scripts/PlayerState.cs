@@ -31,6 +31,7 @@ public class PlayerState : MonoBehaviour
 
     public bool UpdateStamina(float staminaDelta)
     {
+        if(GetComponent<RootMotionNav>() != null) return false;
         if (stamina >= Mathf.Abs(staminaDelta))
         {
             stamina += staminaDelta;
@@ -41,7 +42,7 @@ public class PlayerState : MonoBehaviour
 
     public bool UpdateHealth(float healthDelta)
     {
-        if (currentHealth >= (healthDelta*-1))
+        if (currentHealth > healthDelta)
         {
             currentHealth += healthDelta;
             return true;

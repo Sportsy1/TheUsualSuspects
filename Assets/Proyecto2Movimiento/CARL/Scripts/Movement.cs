@@ -16,6 +16,7 @@ public class Carl_Movement : MonoBehaviour
     {
         velXid = Animator.StringToHash("VelX");
         velYid = Animator.StringToHash("VelY");
+        if(cameraTransform == null) cameraTransform = Camera.main.transform;
     }
 
     public void Move(CallbackContext ctx)

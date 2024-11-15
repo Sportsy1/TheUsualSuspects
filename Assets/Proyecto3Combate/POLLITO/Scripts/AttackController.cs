@@ -14,8 +14,7 @@ public class AttackController : MonoBehaviour
     [SerializeField] GameObject swordMesh;
     [SerializeField] Hunk_WeaponDamager swordDamager;
     [SerializeField] Hunk_WeaponDamager fistsDamager;
-    [SerializeField]
-    private Hunk_WeaponDamager currentDamager;
+    [SerializeField] private Hunk_WeaponDamager currentDamager;
 
 
     Animator anim;
@@ -53,6 +52,11 @@ public class AttackController : MonoBehaviour
     public void ToggleDamageDetector(float motionValue)
     {
         currentDamager.Toggle(motionValue);
+    }
+
+    public void UnBugCollider(){
+        swordDamager.AntiBug_Collider();
+        fistsDamager.AntiBug_Collider();
     }
 
     public void HeavyAttack(CallbackContext ctx){

@@ -47,6 +47,7 @@ public class MovementController : MonoBehaviour
 
     private void Awake()
     {
+        if(cameraTransform == null) cameraTransform = Camera.main.transform;
         anim = GetComponent<Animator>();
         VelXid = Animator.StringToHash("VX");
         VelYid = Animator.StringToHash("VY"); 
@@ -69,7 +70,6 @@ public class MovementController : MonoBehaviour
         Quaternion rotation = Quaternion.LookRotation(projected, transform.up); 
         anim.rootRotation = Quaternion.Slerp(anim.rootRotation, rotation, motionVector.CurrentValue.magnitude);
         anim.ApplyBuiltinRootMotion();
-
     }
 
 }
