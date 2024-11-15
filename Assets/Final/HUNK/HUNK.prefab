@@ -612,10 +612,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3820263002992007587}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1eb2695903933c847a2a605ea49a7b6c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7614082643337834801}
   m_SourcePrefab: {fileID: 100100000, guid: 1eb2695903933c847a2a605ea49a7b6c, type: 3}
 --- !u!95 &327554972128636303 stripped
 Animator:
@@ -794,7 +790,7 @@ MonoBehaviour:
     m_ActionName: '3D Movement/Lock[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7614082643337834801}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CharChange, Assembly-CSharp
         m_MethodName: ChangeCharacter
         m_Mode: 0
@@ -877,21 +873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faction: 0
---- !u!114 &7614082643337834801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6422214410511478095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ab06699ead5204a9c9a39846904fdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextChar: 1
-  prevChar: 2
-  CDT: 1.5
 --- !u!4 &8392292416213405930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6803169544883306252, guid: 1eb2695903933c847a2a605ea49a7b6c,

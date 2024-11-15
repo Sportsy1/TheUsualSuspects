@@ -82,6 +82,7 @@ public class AttackController : MonoBehaviour
     }
 
     public void OnAttackEnding(){
+        //Debug.Log("Puede atacar");
         anim.SetBool("canAttack", true);
     }
 
@@ -89,7 +90,7 @@ public class AttackController : MonoBehaviour
         bool Result;
         if(value == 0) Result = false;
         else Result = true;
-        anim.SetBool("canChange", Result);
+        //anim.SetBool("canChange", Result);
     }
 
     public void InstantiateWeapon(int Weapon){

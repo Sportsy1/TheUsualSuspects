@@ -1834,7 +1834,6 @@ GameObject:
   - component: {fileID: 9180081749199689044}
   - component: {fileID: 3823207585814058087}
   - component: {fileID: 4956305713609788431}
-  - component: {fileID: 2927734919737844730}
   m_Layer: 0
   m_Name: CarlJhonsonFinal
   m_TagString: Untagged
@@ -2012,7 +2011,7 @@ MonoBehaviour:
     m_ActionName: 'Main/HeavyAttack[/Mouse/rightButton]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2927734919737844730}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CharChange, Assembly-CSharp
         m_MethodName: ChangeCharacter
         m_Mode: 0
@@ -2143,21 +2142,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   isLocked: 0
---- !u!114 &2927734919737844730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7232602397213260121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ab06699ead5204a9c9a39846904fdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextChar: 2
-  prevChar: 0
-  CDT: 1.5
 --- !u!1 &7549825657303653716
 GameObject:
   m_ObjectHideFlags: 0
