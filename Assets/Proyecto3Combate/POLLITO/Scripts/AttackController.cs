@@ -12,7 +12,12 @@ public class AttackController : MonoBehaviour
     [Tooltip("Starts in 1, so if you have 3 weapons available, the int will be 3, and so on")] 
     [SerializeField] int WeaponMaxIndex;
     [SerializeField] GameObject swordMesh;
-    
+    [SerializeField] Hunk_WeaponDamager swordDamager;
+    [SerializeField] Hunk_WeaponDamager fistsDamager;
+    [SerializeField]
+    private Hunk_WeaponDamager currentDamager;
+
+
     Animator anim;
     CharacterVFXUpdater _VFXUpdater;
 
@@ -22,6 +27,7 @@ public class AttackController : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", true);
         anim.SetInteger("Weapon", 1);
+        currentDamager = fistsDamager;
         anim.SetBool("canChange", true);
     }
 
@@ -33,7 +39,20 @@ public class AttackController : MonoBehaviour
             if(anim.GetInteger("Weapon")> WeaponMaxIndex) anim.SetInteger("Weapon", 1);
             anim.SetTrigger("ChangeWeapon");
             InstantiateWeapon(anim.GetInteger("Weapon"));
+            if(anim.GetInteger("Weapon") == 1)
+            {
+                currentDamager = swordDamager;
+            }
+            else if (anim.GetInteger("Weapon") == 0)
+            {
+                currentDamager = fistsDamager;
+            }
         }
+    }
+
+    public void ToggleDamageDetector(float motionValue)
+    {
+        currentDamager.Toggle(motionValue);
     }
 
     public void HeavyAttack(CallbackContext ctx){

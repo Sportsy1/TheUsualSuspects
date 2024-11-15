@@ -19,8 +19,8 @@ public class Hunk_WeaponDamager : MonoBehaviour, IDamageSender_hunk
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("ola2");
-        if (collision.TryGetComponent(out IDamageReceiver_hunk target) && target.Faction != Faction)// !hitReceivers.Contains(target))
+        Debug.Log(collision.gameObject.name);
+        if (collision.TryGetComponent(out IDamageReceiver_hunk target) && target.Faction != Faction) //!hitReceivers.Contains(target))
         {
             hitReceivers.Add(target);
             Debug.Log("ola");

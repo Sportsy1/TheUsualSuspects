@@ -55,12 +55,28 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.46004713
+        functionName: ToggleDamageDetector
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: fd84e8ea7d6196a478acf68fe39db155,
+          type: 3}
+        floatParameter: 0.5
+        intParameter: 0
+        messageOptions: 0
       - time: 0.5003182
         functionName: OnAttackEnding
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: fd84e8ea7d6196a478acf68fe39db155,
           type: 3}
         floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.60064936
+        functionName: ToggleDamageDetector
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: fd84e8ea7d6196a478acf68fe39db155,
+          type: 3}
+        floatParameter: 0.5
         intParameter: 0
         messageOptions: 0
       transformMask: []

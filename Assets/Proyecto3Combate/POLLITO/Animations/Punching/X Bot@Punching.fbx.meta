@@ -79,6 +79,22 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.2564935
+        functionName: ToggleDamageDetector
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 5a0c1a85617458b42a8854f96e0f9649,
+          type: 3}
+        floatParameter: 0.5
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.40584415
+        functionName: ToggleDamageDetector
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 5a0c1a85617458b42a8854f96e0f9649,
+          type: 3}
+        floatParameter: 0.5
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
