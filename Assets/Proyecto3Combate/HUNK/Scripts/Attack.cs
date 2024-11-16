@@ -14,6 +14,9 @@ public class Attack : MonoBehaviour
     private Hunk_WeaponDamager swordWeapon;
     [SerializeField]
     private Hunk_WeaponDamager fistsWeapon;
+    private bool isPaused;
+    [SerializeField]
+    private UIManager uiManager;
 
     private Hunk_WeaponDamager currentDamager;
 
@@ -32,13 +35,30 @@ public class Attack : MonoBehaviour
             sword.SetActive(true);
             currentDamager = swordWeapon;
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             if (AttackActive()) return;
             anim.SetInteger("Weapon", 2);
             sword.SetActive(false);
             currentDamager = fistsWeapon;
         }
+
+        if (Input.GetKeyDown(KeyCode.Tab)) 
+        {
+            if (!isPaused)
+            {
+                Debug.Log("pausa");
+                uiManager.Pause();
+                isPaused = true;
+            }
+            else
+            {
+                Debug.Log("resumen");
+                uiManager.Resume();
+                isPaused= false;
+            }
+        }
+
     }
 
     public void LightAttack(InputAction.CallbackContext ctx)
@@ -70,5 +90,7 @@ public class Attack : MonoBehaviour
     {
         sword.SetActive(false);
         anim = GetComponent<Animator>();
+        isPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

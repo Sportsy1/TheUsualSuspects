@@ -21,7 +21,6 @@ public class DamageController_hunk : MonoBehaviour, IDamageReceiver_hunk
         bool isAlive = GetComponent<PlayerState>().UpdateHealth(-payload.damage);
         //Debug.Log("is alive = " + isAlive);
         Vector3 damageDirection = transform.InverseTransformDirection(payload.position).normalized;
-        SendMessage("UnBugCollider");
 
         if (isAlive)
         {

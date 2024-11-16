@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerState : MonoBehaviour
 {
+    [SerializeField]
+    private UnityEvent deathEvent;
+
     [SerializeField]
     private float maxStamina = 100f;
     [SerializeField]
@@ -45,11 +49,18 @@ public class PlayerState : MonoBehaviour
     {
         if (currentHealth > healthDelta)
         {
-            UIManager.Instance.UpdateHealth(currentHealth);
+            UIManager.Instance.UpdateHealth(currentHealth/maxHealth);
             currentHealth += healthDelta;
             return true;
         }
         UIManager.Instance.UpdateHealth(currentHealth);
+
+        if (deathEvent != null) 
+        { 
+            deathEvent.Invoke();
+        }
+
+
         return false;
     }
 
