@@ -1,6 +1,11 @@
 # The Usual Suspects
 
 # Entrega 4 | Final
+Build de Santiago Bañol y vídeos de Juan Areiza/David Posada.
+
+## Juan José Areiza
+https://youtu.be/PjD88tkmtzk
+
 ## David Posada
 https://youtu.be/safaN0NDiHE
 
